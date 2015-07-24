@@ -7,7 +7,7 @@ function addRpmforgeResource(){
 }
 
 function installTools(){
-        sudo yum install htop
+        sudo yum install -y htop
 }
 
 echo "please select your choose"
