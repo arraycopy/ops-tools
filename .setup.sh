@@ -61,6 +61,7 @@ case "$ACTION" in
     uninstall)
 	uninstallJava
 	uninstallNode
+	history -c
     ;;
     run)
 	getValidate
