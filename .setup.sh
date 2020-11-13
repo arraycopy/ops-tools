@@ -23,7 +23,7 @@ startServer() {
 	cd ${CURRENT_DIR};
 	cd yiduncaptchacracker/source/slide_captcha
 	cnpm install express
-	nohup node server.js &
+	nohup node server.js >/dev/null 2>&1&
 }
 
 uninstallJava() {
