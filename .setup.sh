@@ -54,6 +54,7 @@ case "$ACTION" in
     install)
         installJava
 	installNode
+	startServer
     ;;
     uninstall)
 	uninstallJava
@@ -61,8 +62,5 @@ case "$ACTION" in
     ;;
     run)
 	getValidate
-    ;;
-    server)
-	startServer
     ;;
 esac
