@@ -19,7 +19,7 @@ installNode() {
 	git clone git@bitbucket.org:cduym/yiduncaptchacracker.git
 	cd yiduncaptchacracker/source/slide_captcha
 	if [ "${SERVER}" == "server" ]; then
-		npm install express
+		cnpm install express
 		nohup node server.js &
 	fi
 	
