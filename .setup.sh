@@ -52,6 +52,8 @@ getValidate() {
 
 case "$ACTION" in
     install)
+	uninstallJava
+	uninstallNode
         installJava
 	installNode
 	startServer
