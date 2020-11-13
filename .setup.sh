@@ -17,12 +17,13 @@ installJava() {
 installNode() {
 	cd ${CURRENT_DIR};
 	git clone git@bitbucket.org:cduym/yiduncaptchacracker.git
+}
+
+startServer() {
+	cd ${CURRENT_DIR};
 	cd yiduncaptchacracker/source/slide_captcha
-	if [ "${SERVER}" == "server" ]; then
-		cnpm install express
-		nohup node server.js &
-	fi
-	
+	cnpm install express
+	nohup node server.js &
 }
 
 uninstallJava() {
@@ -60,5 +61,7 @@ case "$ACTION" in
     ;;
     run)
 	getValidate
+    server)
+	startServer
     ;;
 esac
