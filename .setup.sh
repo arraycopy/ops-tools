@@ -61,6 +61,7 @@ case "$ACTION" in
     ;;
     run)
 	getValidate
+    ;;
     server)
 	startServer
     ;;
